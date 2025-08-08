@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        .c{
+            background-color:orange;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            left:50%;
+            bottom: 50%;
+            position: fixed;
+        }
+        .b{
+            background-color: yellow;
+            height: 220px;
+            width: 220px;
+            border-radius: 50%;
+            left: 50%;
+            bottom: 50%;
+            animation-name: sun;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            margin-top: 50%;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate-reverse;
+            position: absolute;
+            box-shadow: 0 0 40px 15px black;
+        }
+    
+        @keyframes sun{
+            0%{
+                left: 47%;
+                bottom: 50%;
+                height: 220px;
+                width: 220px;
+                
+            }
+            50%{
+                left: 55%;
+                bottom: 45%;
+            }
+            100%{
+                left: 47%;
+                bottom: 50%;
+                height: 220px;
+                width: 220px;
+                border-radius: 50%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+    <div class="b">
+
+    </div>
+    <div class="c">
+
+    </div>
+    <div class="d">
+
+    </div>
+    </center>
+</body>
+</html>
